@@ -23,7 +23,7 @@ class ApartmentResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\Select::make('apartment')
+                Forms\Components\Select::make('projects')
                     ->relationship('projects', 'name'),
             ]);
     }
